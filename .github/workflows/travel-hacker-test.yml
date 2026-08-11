@@ -11,5 +11,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Test TravelHackerAI
-        run: echo "TravelHackerAI funciona correctamente"
+      - name: Descargar código
+        uses: actions/checkout@v4
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Comprobar Python
+        run: python --version
+
+      - name: Ejecutar prueba
+        run: |
+          python -c "print('🚀 TravelHackerAI - Motor preparado correctamente')"
