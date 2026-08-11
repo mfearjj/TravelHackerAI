@@ -22,6 +22,5 @@ jobs:
       - name: Comprobar Python
         run: python --version
 
-      - name: Ejecutar prueba
-        run: |
-          python -c "print('🚀 TravelHackerAI - Motor preparado correctamente')"
+      - name: Ejecutar TravelHackerAI
+        run: python src/main.py
