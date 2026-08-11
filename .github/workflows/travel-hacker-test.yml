@@ -27,3 +27,11 @@ jobs:
 
       - name: Ejecutar TravelHackerAI
         run: python src/main.py
+
+      - name: Guardar resultado
+        uses: actions/upload-artifact@v4
+        with:
+          name: travel-hacker-result
+          path: |
+            resultado/rAI
+        run: python src/main.py
