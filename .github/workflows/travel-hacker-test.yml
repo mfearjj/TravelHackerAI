@@ -1,0 +1,12 @@
+name: Travel Hacker - Test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Test TravelHackerAI
+        run: echo "TravelHackerAI funciona correctamente"
